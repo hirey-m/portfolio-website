@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     strategy:
       matrix:
         node-version: [14.x, 16.x, 18.x]
@@ -34,3 +34,4 @@ jobs:
         server: ftp.manavhirey.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
+        server-dir: /public_html/dist/
