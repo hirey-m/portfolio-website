@@ -6,6 +6,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     strategy:
       matrix:
         node-version: [14.x, 16.x, 18.x]
@@ -13,10 +14,10 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
-    uses: actions/setup-node@v3
-    with:
-      node-version: ${{ matrix.node-version }}
-      cache: 'npm'
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
     - run: npm install
     - run: npm run build --if-present
     - run: npm test
@@ -26,10 +27,10 @@ jobs:
     needs: [build]
     steps:
     - name: 🚚 Get latest code
-    uses: actions/checkout@v3
+      uses: actions/checkout@v3
     - name: 📂 Sync files
-    uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-    with:
-      server: ftp.manavhirey.com
-      username: ${{ secrets.ftp_username }}
-      password: ${{ secrets.ftp_password }}
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ftp.manavhirey.com
+        username: ${{ secrets.ftp_username }}
+        password: ${{ secrets.ftp_password }}
