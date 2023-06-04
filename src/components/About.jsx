@@ -40,7 +40,7 @@ const About = () => {
       varients={fadeIn("","", 0.1, 1)}
       className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a dedicated full stack developer ready to bring your digital projects to life. With a blend of front-end elegance and back-end functionality, I create captivating user experiences that surpass expectations. From flawless websites to intuitive web applications, I deliver exceptional results. I value collaboration and communication, ensuring every line of code aligns perfectly with your vision. With an insatiable thirst for innovation, I stay on the cutting edge of technology, leveraging the latest tools and frameworks. As your strategic ally in the digital landscape, I'll help you build a remarkable online presence. Choose me, Manav Hirey, and let's create a digital realm that inspires and captivates.
+        I'm a dedicated developer ready to bring your digital projects to life. With a blend of front-end elegance and back-end functionality, I create captivating user experiences that surpass expectations. From flawless websites to intuitive web applications, I deliver exceptional results. I value collaboration and communication, ensuring every line of code aligns perfectly with your vision. With an insatiable thirst for innovation, I stay on the cutting edge of technology, leveraging the latest tools and frameworks. As your strategic ally in the digital landscape, I'll help you build a remarkable online presence. Choose me, Manav Hirey, and let's create a digital realm that inspires and captivates.
     </motion.p>
     <div className="mt-20 flex flex-wrap gap-10">
       {services.map((service, index) => (

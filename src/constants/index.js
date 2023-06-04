@@ -145,11 +145,11 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
+        "Manav and I worked together as freelance web developers, writers, and e-commerce sellers when we ran Finding Nirvaana. His work is excellent and he brings a whole lot of positivity to the room. I’d definitely recommend him to anyone.",
+      name: "Nirvaan",
       designation: "CFO",
       company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+      image: "https://media.licdn.com/dms/image/D4D35AQG8to3ZF7_rsg/profile-framedphoto-shrink_400_400/0/1672228594877?e=1686384000&v=beta&t=3cG0RYra9U4doKURgy9sLkvr1WhPCxm4CCHnng7zuoA",
     },
     {
       testimonial:
